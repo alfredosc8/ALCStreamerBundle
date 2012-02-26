@@ -13,6 +13,8 @@ Simply add the following to your deps file ....
         git=http://github.com/hades200082/ALCStreamerBundle.git
         target=/bundles/ALC/StreamerBundle
 
+... Run `$ php bin/vendors install`
+
 ... Configure the namespace in autoload.php...
 
 ```PHP
