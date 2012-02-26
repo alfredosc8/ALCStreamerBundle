@@ -44,12 +44,20 @@ Add to your config.yml...
 # Streamer configuration
 alc_streamer:
     # Add your station stream ID's below.
-    v1_stream_id: 5448edb815636480
-    v2_stream_id: 438716eeedf9f590
+    v1_stream_id: 5448edb815636480 # This is for Streamer v1.47
+    v2_stream_id: 438716eeedf9f590 # This is for Streamer v2.x BETA
 ```
+
+Usage
+-----
 
 In your controllers you can now do the following to get an instance of the StreamerStatus class (which is where all the useful stuff is kept)
 
 ```php
-    $Streamer = $this->get('alc_streamer');
+$Streamer = $this->get('alc_streamer');
+if ($Streamer->isV1Online()) {
+    $returnArray = array('now_playing' => $Streamer->V1NowPlaying());
+}
+return $returnArray; // You now have a template variable called "now_playing".
 ```
+

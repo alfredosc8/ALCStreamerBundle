@@ -7,8 +7,8 @@
     <parameters>
         <parameter key="alc_streamer.class">ALC\StreamerBundle\Streamer\StreamerStatus</parameter>
         <!-- Use known values so that tests work -->
-        <parameter key="alc_streamer.v1_stream_id">6527b128069d8aa0</parameter>
-        <parameter key="alc_streamer.v2_stream_id">cc56266bcd09ba80</parameter>
+        <parameter key="alc_streamer.v1_stream_id"></parameter>
+        <parameter key="alc_streamer.v2_stream_id"></parameter>
     </parameters>
 
     <services>
