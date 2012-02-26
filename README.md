@@ -15,25 +15,25 @@ Simply add the following to your deps file ....
 
 ... and then register the bundle in your AppKernel...
 
-```php
-    // app/AppKernel.php
-    public function registerBundles()
-    {
-        $bundles = array(
-            //...
-            new ALC\StreamerBundle\StreamerBundle(),
-        );
-    }
+```PHP
+// app/AppKernel.php
+public function registerBundles()
+{
+    $bundles = array(
+        //...
+        new ALC\StreamerBundle\StreamerBundle(),
+    );
+}
 ```
 
 Add to your config.yml...
 
 ```YAML
-    # Streamer configuration
-    alc_streamer:
-        # Add your station stream ID's below.
-        v1_stream_id: 5448edb815636480
-        v2_stream_id: 438716eeedf9f590
+# Streamer configuration
+alc_streamer:
+    # Add your station stream ID's below.
+    v1_stream_id: 5448edb815636480
+    v2_stream_id: 438716eeedf9f590
 ```
 
 In your controllers you can now do the following to get an instance of the StreamerStatus class (which is where all the useful stuff is kept)
