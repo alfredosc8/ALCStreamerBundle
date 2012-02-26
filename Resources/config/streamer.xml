@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="alc_streamer.class">ALC\StreamerBundle\Streamer\StreamerStatus</parameter>
+        <!-- Use known values so that tests work -->
+        <parameter key="alc_streamer.v1_stream_id">6527b128069d8aa0</parameter>
+        <parameter key="alc_streamer.v2_stream_id">cc56266bcd09ba80</parameter>
+    </parameters>
+
+    <services>
+        <service id="alc_streamer" class="%alc_streamer.class%">
+            <argument>%alc_streamer.v1_stream_id%</argument>
+            <argument>%alc_streamer.v2_stream_id%</argument>
+        </service>
+    </services>
+</container>

@@ -1,0 +1,20 @@
+{
+    "name": "ALC/StreamerBundle",
+    "version": "1.0.0",
+    "description": "Simple library to get the status of a streamerp2p internet radio station",
+    "keywords": ["streamerp2p", "radio", "station"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lee Conlin",
+            "email": "lee@wildkatz.org",
+            "homepage": "http://www.wildkatz.org/"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.4",
+        "symfony/framework-bundle": "2.*"
+    },
+    "target-dir": "ALC/StreamerBundle"
+}
