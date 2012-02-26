@@ -13,6 +13,16 @@ Simply add the following to your deps file ....
         git=http://github.com/hades200082/ALCStreamerBundle.git
         target=/bundles/ALC/StreamerBundle
 
+... Configure the namespace in autoload.php...
+
+```PHP
+// app/autoload.php
+$loader->registerNamespaces(array(
+    //...
+    'ALC'              => __DIR__.'/../vendor/bundles',
+));
+```
+
 ... and then register the bundle in your AppKernel...
 
 ```PHP
